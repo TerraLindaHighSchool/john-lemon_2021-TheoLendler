@@ -8,6 +8,7 @@ public class KeyCode : MonoBehaviour
     public GameObject FakeWall;
     public GameObject FakeWall1;
     public GameObject FakeWall2;
+    public GameObject FakeWall3;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,7 @@ public class KeyCode : MonoBehaviour
         Destroy(FakeWall);
         Destroy(FakeWall1);
         Destroy(FakeWall2);
+        Destroy(FakeWall3);
     }
 
 }
