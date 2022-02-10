@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class KeyCode : MonoBehaviour
 {
-    public GameObject barrier;
+    public GameObject Door;
+    public GameObject FakeWall;
+    public GameObject FakeWall1;
+    public GameObject FakeWall2;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,10 @@ public class KeyCode : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
-        Destroy(barrier);
+        Destroy(Door);
+        Destroy(FakeWall);
+        Destroy(FakeWall1);
+        Destroy(FakeWall2);
     }
 
 }
