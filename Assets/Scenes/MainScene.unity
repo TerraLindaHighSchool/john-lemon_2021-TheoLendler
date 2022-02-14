@@ -719,6 +719,7 @@ GameObject:
   - component: {fileID: 368449100}
   - component: {fileID: 368449099}
   - component: {fileID: 368449098}
+  - component: {fileID: 368449102}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -806,6 +807,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!225 &368449102
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368449097}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &472141080 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4078804358234920029, guid: 32991829c7928834296709336031f961,
@@ -1502,7 +1515,7 @@ GameObject:
   - component: {fileID: 1110501086}
   - component: {fileID: 1110501088}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: HintZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1529,8 +1542,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110501085}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.26, y: 0.70412946, z: 5.16}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5.26, y: 1, z: 5.16}
+  m_LocalScale: {x: 1, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -1544,11 +1557,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1110501085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f22d3dafc7266624887b6a7014ae6b5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 78c842a739c6fae47b3c2aef8e3df589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HintText: {fileID: 1416972553}
-  turnSpeed: 20
+  Collider: {fileID: 1110501085}
+  hintText: {fileID: 1416972553}
 --- !u!1 &1191951533
 GameObject:
   m_ObjectHideFlags: 0

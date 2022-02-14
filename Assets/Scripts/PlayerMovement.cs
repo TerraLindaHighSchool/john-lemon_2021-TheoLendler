@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public GameObject HintText;
     public float turnSpeed = 20f;
 
     Animator m_Animator;
@@ -55,12 +54,4 @@ public class PlayerMovement : MonoBehaviour
         m_Rigidbody.MoveRotation(m_Rotation);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        HintText.SetActive(true);
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        HintText.SetActive(false);
-    }
 }
