@@ -1562,6 +1562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Collider: {fileID: 1110501085}
   hintText: {fileID: 1416972553}
+  hasKey: 0
 --- !u!1 &1191951533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,6 +1660,7 @@ MonoBehaviour:
   FakeWall1: {fileID: 1942756947}
   FakeWall2: {fileID: 150952265}
   FakeWall3: {fileID: 1821215618}
+  hintText: {fileID: 1110501088}
 --- !u!135 &1211779883
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1913,10 +1915,10 @@ RectTransform:
   m_Father: {fileID: 368449101}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 57}
+  m_SizeDelta: {x: -472, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1416972555
 MonoBehaviour:
@@ -2000,7 +2002,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 33.71692, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2867,6 +2869,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3475137301192724159, guid: 549c69af39b84624b8a053537c407def,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3475931552350424431, guid: 549c69af39b84624b8a053537c407def,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3674741053973066913, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       propertyPath: m_RootOrder
@@ -3025,6 +3037,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JohnLemon
+      objectReference: {fileID: 0}
+    - target: {fileID: 4078804358234920029, guid: 32991829c7928834296709336031f961,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4078804358235408509, guid: 32991829c7928834296709336031f961,
         type: 3}

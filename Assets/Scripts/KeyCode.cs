@@ -9,6 +9,7 @@ public class KeyCode : MonoBehaviour
     public GameObject FakeWall1;
     public GameObject FakeWall2;
     public GameObject FakeWall3;
+    public HintText hintText;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class KeyCode : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        hintText.hasKey = true;
         Destroy(gameObject);
         Destroy(Door);
         Destroy(FakeWall);

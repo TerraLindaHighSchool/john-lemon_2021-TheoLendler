@@ -6,6 +6,7 @@ public class HintText : MonoBehaviour
 {
     public GameObject Collider;
     public GameObject hintText;
+    public bool hasKey;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +19,12 @@ public class HintText : MonoBehaviour
         
     }
    
-    private void OnTriggerEnter(Collider Collider)
+    private void OnTriggerEnter(Collider other)
     {
-        hintText.SetActive(true);
+        if (other.tag == "Player" && !hasKey) hintText.SetActive(true);
     }
-    private void OnTriggerExit(Collider Collider)
+    private void OnTriggerExit(Collider other)
     {
-        hintText.SetActive(false);
+        if (other.tag == "Player") hintText.SetActive(false);
     }
 }
