@@ -2,18 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class TitleText : MonoBehaviour
 {
-    private float movementX;
-    private float movementY;
-    public GameObject TitleText;
-    void FixedUpdate()
+    private float positionX;
+    private float positionY;
+    public GameObject titleText;
+
+   void FixedUpdate()
     {
-        if (movementX > 0 || movementY > 0 || movementX < 0 || movementY < 0)
+        if (positionX != -9.8 || positionY != 0)
         {
-            TitleText.SetActive(false);
+            titleText.SetActive(false);
         }
     }
 
-    
+    private void Start()
+    {
+        titleText.SetActive(true);
+    }
 }
